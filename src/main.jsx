@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { App } from "./App.jsx";
+import { Routes } from "./routes";
 import { Global } from "./styles/global.js";
 import { defaultTheme } from "./styles/theme/default.js";
+import { ThemeProvider } from "styled-components";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Global theme={defaultTheme}>
-      <App />
-    </Global>
+    <ThemeProvider theme={defaultTheme}>
+      <Routes />
+      <Global />
+    </ThemeProvider>
   </React.StrictMode>
 );

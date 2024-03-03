@@ -1,4 +1,6 @@
-export const Head = (title, description) => {
+export const Head = ({ title, description }) => {
   document.title = `Food Explorer | ${title}`;
-  document.querySelector('[name="description]').setAttribute('content', description)
+  document
+    .querySelector("[name=description]")
+    .setAttribute("content", description);
 };
