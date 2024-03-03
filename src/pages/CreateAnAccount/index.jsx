@@ -1,13 +1,13 @@
-import * as C from "./styles";
-
 import { Head } from "../../components/Head";
+
+import * as C from "./styles";
 
 import logoImg from "../../assets/logo-main.svg";
 
-export const SignIn = () => {
+export const CreateAnAccount = () => {
   return (
     <C.Container>
-      <Head title="Login" />
+      <Head title="Criar Conta" />
 
       <C.Content>
         <C.LogoImage>
@@ -17,34 +17,29 @@ export const SignIn = () => {
         <C.Form>
           <C.FormContent>
             <header>
-              <h2>Faça Login</h2>
+              <h2>Crie sua conta</h2>
             </header>
 
             <C.LabelBlock>
+              <label htmlFor="name">Seu nome</label>
+              <input type="text" name="name" id="name" placeholder="Exemplo: Maria da Silva" />
+            </C.LabelBlock>
+
+            <C.LabelBlock>
               <label htmlFor="email">Email</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                placeholder="Exemplo: exemplo@exemplo.com.br"
-              />
+              <input type="text" name="email" id="email" placeholder="Exemplo: exemplo@exemplo.com.br" />
             </C.LabelBlock>
 
             <C.LabelBlock>
               <label htmlFor="password">Senha</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="No mínimo 6 caracteres"
-              />
+              <input type="password" name="password" id="password" placeholder="No mínimo 6 caracteres"/>
             </C.LabelBlock>
 
             <button type="button">
-              <span>Entrar</span>
+              <span>Criar Conta</span>
             </button>
 
-            <footer>Criar uma conta</footer>
+            <footer>Já tenho uma conta</footer>
           </C.FormContent>
         </C.Form>
       </C.Content>
