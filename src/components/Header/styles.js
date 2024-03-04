@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
+    grid-area: header;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 100%;
-    height: 104px;
+    height: 6.5rem;
 
     background-color: ${({ theme }) => theme['dark-600']};
 `
@@ -15,10 +17,10 @@ export const Content = styled.div`
     width: 100%;
     max-width: 85.5rem;
 
-    padding: 24px 123px;
+    padding: 1.5rem 7.688rem;
 
     @media(max-width: 1024px) {
-        padding: 20px;
+        padding: 1.25rem;
     }
 `
 
@@ -26,13 +28,13 @@ export const MainBar = styled.div`
     display: flex;
     align-items: center;
 
-    height: 56px;
+    height: 3.5rem;
     width: 100%;
-    max-width: 1122px;
+    max-width: 70.125rem;
 
     > img {
-        height: 30px;
-        width: 197px;
+        height: 1.875rem;
+        width: 12.313rem;
     }
 
     @media(max-width: 1146px) {
@@ -41,8 +43,8 @@ export const MainBar = styled.div`
 
     @media(max-width: 425px) {
         > img {
-            width: 128px;
-            height: 25px;
+            width: 8rem;
+            height: 1.563rem;
         }
     }
 `
@@ -55,14 +57,14 @@ export const MenuMobile = styled.div`
         align-items: center;
 
         > svg {
-            width: 24px;
-            height: 26px;
+            width: 1.5rem;
+            height: 1.625rem;
         }
     }
 
     @media(max-width: 425px) {
         > svg {
-            height: 18px;
+            height: 1.125rem;
         }
     }
 `
@@ -79,18 +81,18 @@ export const Form = styled.form`
 
         cursor: pointer;
 
-        gap: 8px;
+        gap: 0.5rem;
 
         width: 100%;
-        height: 56px;
-        max-width: 216px;
+        height: 3.5rem;
+        max-width: 13.5rem;
 
         > span {
-            font-size: 14px;
             font-weight: 600;
+            font-size: 0.875rem;
         }
         
-        margin-right: 32px;
+        margin-right: 2rem;
 
         border: 0;
         border-radius: 5px;
@@ -125,12 +127,12 @@ export const Form = styled.form`
 
     @media(max-width: 425px) {
         > svg {
-            height: 18px;
+            height: 1.125rem;
         }
 
         > button {
             > img {
-                height: 18px;
+                height: 1.125rem;
             }
         }
     }
@@ -138,15 +140,15 @@ export const Form = styled.form`
 
 export const Search = styled.div`
     display: flex;
-    gap: 14px;
+    gap: 0.875rem;
     align-items: center;
 
     width: 100%;
-    height: 48px;
-    max-width: 581px;
+    height: 3rem;
+    max-width: 36.313rem;
 
-    margin: 0 32px;
-    padding: 12px 99px;
+    margin: 0 2rem;
+    padding: 0.75rem 6.188rem;
 
     border-radius: 5px;
 
@@ -168,7 +170,7 @@ export const Search = styled.div`
     background-color: ${({ theme }) => theme['dark-900']};
 
     @media(max-width: 1400px) {
-        padding: 12px 0 12px 20px;
+        padding: 0.75rem 0 0.75rem 1.25rem;
     }
 
     @media(max-width: 1146px) {
