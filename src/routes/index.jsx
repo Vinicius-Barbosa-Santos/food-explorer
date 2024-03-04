@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { AppRoutes } from '../routes/appRoutes'
-import { AuthRoutes } from '../routes/authRoutes'
+import { AppRoutes } from "../routes/appRoutes";
+import { AuthRoutes } from "../routes/authRoutes";
 
 export const Routes = () => {
-    return (
-        <BrowserRouter>
-            <AuthRoutes /> 
-        </BrowserRouter>
-    )
-}
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  );
+};
