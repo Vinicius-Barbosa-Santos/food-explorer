@@ -22,13 +22,15 @@ export const Global = createGlobalStyle`
     font: 400 1rem 'Poppins', sans-serif
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
   button:hover, a:hover {
     filter: brightness(0.9);
   }
-
-  @media(max-width: 768px) {
-        html {
-            font-size: 87.5%;
-        }
-    }
 `

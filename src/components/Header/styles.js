@@ -19,7 +19,7 @@ export const Content = styled.div`
 
     padding: 1.5rem 7.688rem;
 
-    @media(max-width: 1024px) {
+    @media(max-width: 780px) {
         padding: 1.25rem;
     }
 `
