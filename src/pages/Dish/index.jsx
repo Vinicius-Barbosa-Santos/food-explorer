@@ -2,9 +2,6 @@ import { Head } from "../../components/Head";
 
 import * as C from "./styles";
 
-import { AiOutlinePlus } from "react-icons/ai";
-import { AiOutlineMinus } from "react-icons/ai";
-
 // Exemplo
 import dishImage from "../../assets/dish.svg";
 
@@ -12,6 +9,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { Tag } from "../../components/Tag";
 
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Quantity } from "../../components/Quantity";
 
 export const Dish = () => {
   const [tags, setTags] = useState([
@@ -49,44 +48,30 @@ export const Dish = () => {
       />
 
       <C.Content>
-        <a href="#">
+        <Link to={"/"}>
           <IoIosArrowBack size={34} color="#fff" />
           <span>voltar</span>
-        </a>
+        </Link>
 
-        <C.DishContent>
+        <C.Main>
           <img src={dishImage} alt="Prato" />
 
-          <C.DishText>
+          <C.MainText>
             <h1>Salada Ravanello</h1>
             <p>
               Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.
               O pão naan dá um toque especial.
             </p>
 
-            <C.GridItems>
+            <C.Tags>
               {tags.map((tag) => {
                 return <Tag key={tag.id} tagName={tag.name} />;
               })}
-            </C.GridItems>
+            </C.Tags>
 
-            <C.QuantityText>
-              <C.QuantityTextContent>
-                <button>
-                  <AiOutlineMinus size={24} />
-                </button>
-                <span>01</span>
-                <button>
-                  <AiOutlinePlus size={24} />
-                </button>
-              </C.QuantityTextContent>
-
-              <button type="button">
-                <span>Incluir ∙ R$25,00</span>
-              </button>
-            </C.QuantityText>
-          </C.DishText>
-        </C.DishContent>
+            <Quantity />
+          </C.MainText>
+        </C.Main>
       </C.Content>
     </C.Container>
   );
