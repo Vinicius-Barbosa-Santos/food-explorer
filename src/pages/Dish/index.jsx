@@ -1,9 +1,6 @@
 import { Head } from "../../components/Head";
-import { Header } from "../../components/Header";
 
 import * as C from "./styles";
-
-import logoImgDark from "../../assets/logo-dark.svg";
 
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -17,8 +14,6 @@ import { Tag } from "../../components/Tag";
 import { useState } from "react";
 
 export const Dish = () => {
-  const date = new Date();
-
   const [tags, setTags] = useState([
     {
       id: 1,
@@ -52,7 +47,6 @@ export const Dish = () => {
         title="Prato"
         description="O prazer da escolha está em suas mãos. Em nosso restaurante, oferecemos uma variedade de pratos cuidadosamente elaborados para satisfazer todos os paladares. Desde pratos clássicos até criações inovadoras, cada opção é uma jornada culinária única. Explore nosso menu e deixe seu paladar guiar você. Seu prato, sua escolha - porque sabemos que a felicidade começa com um simples ato de escolha."
       />
-      <Header />
 
       <C.Content>
         <a href="#">
@@ -94,15 +88,6 @@ export const Dish = () => {
           </C.DishText>
         </C.DishContent>
       </C.Content>
-
-      <C.Footer>
-        <C.FooterContent>
-          <img src={logoImgDark} alt="Logo Food-Explorer" />
-          <span>
-            &copy; {date.getFullYear()} - Todos os direitos reservados.
-          </span>
-        </C.FooterContent>
-      </C.Footer>
     </C.Container>
   );
 };

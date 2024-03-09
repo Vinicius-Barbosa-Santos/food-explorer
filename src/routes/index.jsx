@@ -6,8 +6,8 @@ import { AuthRoutes } from "../routes/authRoutes";
 export const Routes = () => {
   return (
     <BrowserRouter>
-      {/* <AppRoutes /> */}
-      <AuthRoutes />
+      <AppRoutes />
+      {/* <AuthRoutes /> */}
     </BrowserRouter>
   );
 };
