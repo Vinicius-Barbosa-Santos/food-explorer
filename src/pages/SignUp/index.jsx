@@ -13,10 +13,11 @@ import * as C from "./styles";
 // Assets
 import logoImg from "../../assets/logo-main.svg";
 
-export const SignIn = () => {
+
+export const SignUp = () => {
   return (
     <C.Container>
-      <Head title="Login" />
+      <Head title="Criar Conta" />
 
       <C.Content>
         <C.LogoImage>
@@ -26,8 +27,18 @@ export const SignIn = () => {
         <C.Form>
           <C.FormContent>
             <header>
-              <h2>Faça login</h2>
+              <h2>Crie sua conta</h2>
             </header>
+
+            <Input>
+              <label htmlFor="name">Seu nome</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Exemplo: Maria da Silva"
+              />
+            </Input>
 
             <Input>
               <label htmlFor="email">Email</label>
@@ -50,11 +61,11 @@ export const SignIn = () => {
             </Input>
 
             <Button>
-              <ButtonText title={"Entrar"} />
+              <ButtonText title={"Criar conta"} />
             </Button>
 
             <footer>
-              <Link to={"/"}>Crie uma conta</Link>
+              <Link to={"/sign-in"}>Já tenho uma conta</Link>
             </footer>
           </C.FormContent>
         </C.Form>

@@ -16,7 +16,9 @@ export const HomePage = () => {
       />
       <Header />
 
-      <C.Content>....</C.Content>
+      <C.Content>
+       .....
+      </C.Content>
 
       <C.Footer>
         <C.FooterContent>

@@ -21,19 +21,16 @@ export const Content = styled.div`
     justify-content: center;
 
     margin: 0 auto;
-    padding: 90.12px 108px 112.88px 153.86px;
+    padding: 5.633rem 6.75rem 7rem 9.563rem;
 
     @media(max-width: 1161px) {
         height: auto;
 
+        padding: 0;
+
         align-items: center;
         flex-direction: column;
         justify-content: center;
-    }
-
-    @media(max-width: 780px) {
-        height: auto;
-        padding: 0;
     }
 `
 
@@ -51,9 +48,10 @@ export const LogoImage = styled.div`
 
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
 
         > img {
+            margin-left: -2.5rem;
             margin-bottom: 4.563rem;
         }
     }
@@ -62,19 +60,14 @@ export const LogoImage = styled.div`
         margin-right: auto;
     }
 
-    @media(max-width: 780px) {
-       > img {
-            height: 2.75rem;
-            width: 17.378rem;
-       }
-    }
-
     @media(max-width: 375px) {
         margin-bottom: 1.875rem;
 
         > img {
+            margin-left: 0;
+
             height: 2.75rem;
-            width: 14.378rem;
+            width: 16.378rem;
             margin-bottom: 0px;
        }
     }
@@ -103,7 +96,7 @@ export const FormContent = styled.div`
     header > h2 {
         text-align: center;
 
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 500;
 
         margin-top: 4rem;
@@ -114,59 +107,17 @@ export const FormContent = styled.div`
             margin-top: 0;
         }
     }
+    
+    > footer a {
+        display: block;
 
-    > button {
-        width: 100%;
-
-        border: 0;
-        padding: 0.75rem 2rem;
-        border-radius: 5px;
-
-        > span {
-            font-weight: 600;
-            color: ${({ theme }) => theme['light-100']};
-        }
-
-        background-color: ${({ theme }) => theme['tints-100']};
-    }
-
-    > button:hover {
-       cursor: pointer;
-    }
-
-    > footer {
+        color: #fff;
         text-align: center;
         margin: 2rem auto 4rem;
-    }
-`
 
-export const LabelBlock = styled.div`
-    margin-bottom: 2rem;
-
-    label {
-        display: block;
-        margin-bottom: 0.625rem;
-
-        color: ${({ theme }) => theme['light-400']};
-    }
-
-    input {
-        width: 100%;
-
-        padding: 0.875rem;
-
-        border: 0;
-        background: none;
-        border-radius: 8px;
-        color: ${({ theme }) => theme['light-100']};
-        background-color: ${({ theme }) => theme['dark-400']};
-
-        @media(max-width: 1161px) {
-            background-color: ${({ theme }) => theme['dark-900']};
+        &:focus {
+            outline: 0;
+            box-shadow: none;
         }
-    }
-
-    @media(max-width: 375px) {
-        margin-top: 1.25rem;
     }
 `

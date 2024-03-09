@@ -8,6 +8,9 @@ export const defaultTheme = {
     'light-500': '#7C7C8A',
     'light-600': '#76797B',
     'light-700': '#4D585E',
+
+    'linear-100': '#091E26',
+    'linear-200': '#00131C',
   
     'dark-100': '#000405',
     'dark-200': '#00070A',

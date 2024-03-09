@@ -115,7 +115,7 @@ export const GridItems = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @media(max-width: 427px) {
+    @media(max-width: 320px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `
